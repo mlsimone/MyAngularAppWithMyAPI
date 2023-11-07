@@ -17,8 +17,8 @@ export class ItemService {
     // MLS 11/7/23 trying to use HttpClient
     // where endpoint is from function
 
-    return this.httpClient.get<Array<Product>>("http://localhost:7071/api/getProducts");
+    // return this.httpClient.get<Array<Product>>("http://localhost:7071/api/getProducts");
 
-
+      return this.httpClient.get<Array<Product>>("https://calm-pebble-026d3790f.4.azurestaticapps.net/api/getProducts");
   }
 }
